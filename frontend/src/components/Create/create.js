@@ -4,6 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import Navbar from '../Navbar/navbar';
 import { Button } from 'react-bootstrap';
+import config from '../config.json';
 
 function Create() {
   const [postImage, setPostImage] = useState('');
@@ -23,7 +24,7 @@ function Create() {
    }
 
    const fetchCredentials = async () => {
-    const response = await axios.post('auth/login', {
+    const response = await axios.post(config.API_URL+'/auth/login', {
       username: adminUsername,
       password: adminPassword,
     });

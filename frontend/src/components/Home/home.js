@@ -6,13 +6,14 @@ import Header from '../Header/header';
 import './home.css';
 import axios from 'axios';
 import About from '../About/about';
+import config from '../config.json';
 
 function Home() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     const fetchPost = async() =>{
-     const res =   await axios.get('/posts');
+     const res =   await axios.get(config.API_URL+'/posts');
       setPosts(res.data);
     }
     fetchPost();

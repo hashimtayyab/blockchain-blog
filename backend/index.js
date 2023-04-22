@@ -6,7 +6,7 @@ const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const multer = require("multer");
-const cors = require("cors");
+const cors = require('cors');
 
 app.use(cors());
 dotenv.config();

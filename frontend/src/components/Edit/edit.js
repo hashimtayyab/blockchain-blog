@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import {useState} from 'react';
 import axios from 'axios';
 import './edit.css';
+import config from '../config.json';
 
 function Edit() {
 
@@ -18,10 +19,10 @@ function Edit() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
 
-
   useEffect(()=>{
     const getPostFirst= async () => {
-        const response = await axios.get('http://localhost:5000/api/posts/'+path);
+        // const response = await axios.get('http://localhost:5000/api/posts/'+path);
+        const response = await axios.get(config.API_URL+'/posts/'+path);
         setpost(response.data);
         setNewTitle(response.data.title);
         setNewDesc(response.data.desc);
@@ -31,7 +32,7 @@ function Edit() {
   },[path]);
     const editPost = async() =>{
         console.log(newTitle);
-        await axios.put("http://localhost:5000/api/posts/"+path, {
+        await axios.put(config.API_URL+"/posts/"+path, {
             title: newTitle,
             desc: newDesc,
             postPic: newPostpic,
@@ -41,7 +42,7 @@ function Edit() {
         setInputUsername('');
     }
     const checkPassword = async() =>{
-        const passResponse = await axios.post('/auth/login', {
+        const passResponse = await axios.post(config.API_URL+'/auth/login', {
             password: inputPassword,
             username: inputUsername,
         })
