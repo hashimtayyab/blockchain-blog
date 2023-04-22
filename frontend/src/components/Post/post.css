@@ -1,0 +1,68 @@
+.postImg{
+    height: 100%;
+    overflow: hidden;
+}
+
+.postingDate{
+    color:darkgrey;
+    font-size: 12px;
+}
+
+.maincard{
+    box-sizing: border-box;
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    margin: 15px;
+    overflow: hidden;
+
+}
+.maincard:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.23);
+}
+
+.maincard.card{
+    --bs-card-inner-border-radius:0px;
+border-radius:0px;
+--bs-card-bg: none;
+}
+
+.postText{
+
+color: white;
+
+}
+
+p.postText.card-text{
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.postTitle{
+    color: white;
+    font-size: 40px;
+    display: flex;
+}
+
+@media only screen and (max-width: 720px) {
+    .postImg {
+        display: none;
+    }
+    .postTitle{
+        margin-left: -200px;
+    }
+    .postText{
+        margin-left: -200px;
+    }
+    .postingDate{
+        margin-left: -200px;
+    }
+}
+
+/* div.postTitle.cart-title.h4{
+    font-size: 3rem;
+} */

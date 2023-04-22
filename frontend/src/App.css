@@ -1,0 +1,13 @@
+.App{
+    /* display: flex; */
+    /* .homeImg{ */
+        /* background-image: url("https://wallpaperaccess.com/full/1267580.jpg"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:#202121;
+    /* } */
+}
+
+div.text-white.card{
+    --bs-card-border-color: none;
+}

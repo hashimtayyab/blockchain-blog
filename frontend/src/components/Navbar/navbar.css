@@ -1,0 +1,74 @@
+.container{
+    padding-top: 20px;
+}
+
+svg{
+    color: aliceblue;
+}
+
+div.mainRow.row{
+    margin-left: 30px;
+    margin-right: 30px;
+    /* background-color: #202121; */
+}
+
+.mylogo{
+    align-items: center;
+    justify-content: space-around;
+}
+.mylogo a{
+    color: white;
+    text-decoration: none;
+}
+
+/* .mainRow{
+    box-shadow: 20px 20px 10px 2px rgba(0,0,0,.8);
+} */
+
+.navoptions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+.navoptions a{   
+    padding-left: 40px;
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.about{
+    color: aliceblue;
+    padding-left: 40px;
+}
+.about:hover{
+    cursor: pointer;
+    color: rgb(2, 2, 189);
+}
+.navoptions svg{
+    padding-left: -10px;
+}
+
+.logo{
+font-family:'Lobster', serif;
+font-size: 30px;
+font:bold;
+}
+
+.dp{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.dp:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 720px) {
+    svg {
+        display: none;
+    }
+}

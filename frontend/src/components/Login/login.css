@@ -1,0 +1,48 @@
+.login {
+    height: calc(100vh - 11vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      background-image:url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/04/15/bitcoin-price-latest-news-update.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .loginDiv{
+    margin-left: 25%;
+    color: aliceblue;
+  }
+  
+  .loginTitle {
+    font-size: 50px;
+  }
+  
+  .loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginForm > label {
+    margin: 10px 0;
+  }
+  
+  .loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .loginInput:focus {
+    outline: none;
+  }
+  
+
+  
+span.loginRegisterButton:hover{
+    cursor: pointer;
+    color: aquamarine;
+  }

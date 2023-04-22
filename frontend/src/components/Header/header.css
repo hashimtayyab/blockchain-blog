@@ -1,0 +1,29 @@
+.headerImg{
+    height: 700px;
+    width:100%;
+    object-fit:cover;
+}
+
+
+.headerItems{
+    display:flex;
+    flex-direction: column; 
+}
+
+.headerTitle.card-title{
+    font-size: 70px;
+}
+.headerTitle{
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Lobster', serif;
+}
+.headerText{
+    font-family: 'Rajdhani', serif;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 22px;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}

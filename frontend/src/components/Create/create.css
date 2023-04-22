@@ -1,0 +1,16 @@
+.writeForm{
+    padding: 20px;
+}
+
+.writeForm div{
+    margin-top: 30px;
+}
+
+.writetext{
+    width: 600px;
+    height: 200px;
+}
+.write{
+    height: 100vh;
+    color: aliceblue;
+}

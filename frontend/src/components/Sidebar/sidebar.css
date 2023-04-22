@@ -1,0 +1,16 @@
+.bitcoinPhoto{
+    height:auto;
+    width:-webkit-fill-available;
+}
+.sidebarItem{
+    border: solid 1px white;
+    /* display: flex; */
+}
+
+.sidebarText{
+    color: aliceblue;
+}
+.sidebarTitle{
+    color: aliceblue;
+    text-align: center;
+}
